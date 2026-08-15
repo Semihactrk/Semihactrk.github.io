@@ -162,7 +162,7 @@
         </button>
 
         <button class="project-row" type="button" data-project="aerovision" aria-haspopup="dialog">
-          <div class="project-thumb">
+          <div class="project-thumb thumb-contain">
             <img src="images/teknofest-logo.png" alt="AeroVision proje görseli" loading="lazy">
           </div>
           <div class="project-row-content">
@@ -179,6 +179,27 @@
               <li>Visual Odometry</li>
               <li>SIFT</li>
               <li>SAHI</li>
+            </ul>
+          </div>
+        </button>
+
+        <button class="project-row" type="button" data-project="algomind" aria-haspopup="dialog">
+          <div class="project-thumb">
+            <img src="images/algomind-1.png" alt="Algomind ekran görüntüsü" loading="lazy">
+          </div>
+          <div class="project-row-content">
+            <h3>Algomind — Otizmli Çocuklar İçin Eğitim Uygulaması <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <span class="badge badge-accent">BTK Hackathon 2025</span>
+            <p>
+              Otizmli çocuklar için tasarlanmış, yapay zeka destekli
+              etkileşimli bir mobil öğrenme platformu. Kişiselleştirilmiş
+              testler ve seslendirilmiş masallar sunuyor.
+            </p>
+            <ul class="tech-pills">
+              <li>Kivy</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Gemini API</li>
             </ul>
           </div>
         </button>
@@ -334,6 +355,27 @@
           fonksiyonu ve Lion optimizasyon algoritması kullanıldı.
         </p>
         <p class="tech">YOLOv26m · SAHI · Visual Odometry (Lucas-Kanade) · SIFT · CLAHE · Python</p>
+      </template>
+
+      <template id="detail-algomind">
+        <h3>Algomind — Otizmli Çocuklar İçin Eğitim Uygulaması</h3>
+        <span class="badge badge-accent">BTK Hackathon 2025</span>
+        <p>
+          Otizmli çocuklar için tasarlanmış, etkileşimli bir mobil öğrenme
+          platformu. Gemini API ile otomatik test oluşturma ve kişiselleştirilmiş
+          performans raporları sunuyor; Google Cloud TTS ile masallar sesli
+          olarak dinlenebiliyor ve anlık değiştirilebiliyor.
+        </p>
+        <p>
+          Öğretmen ve veliler için ayrı roller var: öğrenci yönetimi, test
+          çözümü ve rapor görüntüleme yetkileri buna göre ayrışıyor. Mimari;
+          mobil uygulamadan FastAPI backend'ine, oradan Gemini API ve Google
+          TTS'e, sonucun PostgreSQL veritabanına yazılmasına kadar uzanıyor.
+        </p>
+        <p class="tech">Python · Kivy · KivyMD · FastAPI · SQLAlchemy · PostgreSQL (Google Cloud SQL) · Gemini API</p>
+        <div class="modal-links">
+          <a href="https://github.com/Semihactrk/Algomind_BTK-_HACKATHON-_2025" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
+        </div>
       </template>
 
       <template id="detail-proje-2">

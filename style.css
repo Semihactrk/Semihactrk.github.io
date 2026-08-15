@@ -248,6 +248,16 @@ main {
   object-fit: cover;
 }
 
+/* Ekran görüntüsü değil logo gösteren thumbnail'ler için: kırpma, tam sığdır */
+.thumb-contain {
+  background: #fff;
+}
+
+.thumb-contain img {
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
 .project-row-content { min-width: 0; }
 
 .project-row-content h3 {
