@@ -174,9 +174,15 @@ main {
 .about-photo {
   aspect-ratio: 1 / 1;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--navy-light), var(--accent) 200%);
-  opacity: 0.15;
+  overflow: hidden;
+  background: var(--navy-light);
   border: 1px solid var(--accent);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===== Skills ===== */
