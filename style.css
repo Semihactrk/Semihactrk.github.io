@@ -172,7 +172,7 @@ main {
 .about-text p { margin-bottom: 1rem; }
 
 .about-photo {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   border-radius: 8px;
   overflow: hidden;
   background: var(--navy-light);
