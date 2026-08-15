@@ -76,78 +76,57 @@
     <!-- ===== PROJECTS — projelerin ===== -->
     <section id="projects" class="section">
       <h2 class="section-title"><span class="num">03.</span> Projeler</h2>
-      <div class="projects-grid">
+      <div class="project-list">
 
-        <!-- TODO: Her kart bir proje. Kopyala / çoğalt / düzenle -->
-        <article class="project-card">
-          <div class="project-screenshots">
-            <a href="images/local-rag-1.png" target="_blank">
-              <img src="images/local-rag-1.png" alt="Sohbet arayüzü ve kaynak referansları">
-            </a>
-            <a href="images/local-rag-2.png" target="_blank">
-              <img src="images/local-rag-2.png" alt="Kaynak arşivi paneli">
-            </a>
-            <a href="images/local-rag-3.png" target="_blank">
-              <img src="images/local-rag-3.png" alt="Konuşma geçmişi">
-            </a>
+        <!-- TODO: Her satır bir proje. Kopyala / çoğalt / düzenle.
+             Kısa tut: 2-3 satırlık açıklama yeter, detay zaten linkteki repo/demo'da. -->
+        <a class="project-row" href="https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <img src="images/local-rag-1.png" alt="Local RAG Assistant ekran görüntüsü" loading="lazy">
           </div>
-
-          <h3>Local RAG Assistant — Foundry Local</h3>
-          <p>
-            Microsoft Foundry Local ile tamamen offline çalışan, doküman tabanlı
-            soru-cevap asistanı. Yüklenen dokümanları embed edip SQLite üzerinde
-            en alakalı metin parçalarını buluyor, ardından yerel bir dil modeliyle
-            kaynak göstererek cevaplıyor. Microsoft AI Innovators Summer
-            Internship programı kapsamında geliştirildi.
-          </p>
-          <p class="tech">Python · Flask · SQLite · Foundry Local (Qwen2.5 &amp; Qwen3-Embedding)</p>
-
-          <p class="highlight">
-            <strong>Öne Çıkan Zorluk:</strong> Model bazı sorularda aynı cümleyi
-            80+ kez tekrarlayıp yanıt süresini 104 saniyeye çıkarıyordu;
-            frequency_penalty ayarıyla bunu 10 saniyeye indirdim. Ayrıca retrieval
-            benzerlik skorlarını kalibre ederek "cevap bulunamadı" durumlarını
-            güvenilir şekilde ayırt eden bir eşik değeri (threshold) belirledim.
-          </p>
-
-          <div class="project-links">
-            <a href="https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local" target="_blank" rel="noopener">
-              GitHub'da İncele
-            </a>
+          <div class="project-row-content">
+            <h3>Local RAG Assistant — Foundry Local <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <p>
+              Microsoft Foundry Local ile tamamen offline çalışan, doküman tabanlı
+              soru-cevap asistanı. Dokümanları embed edip en alakalı parçaları
+              bularak kaynak göstererek cevaplıyor.
+            </p>
+            <ul class="tech-pills">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>SQLite</li>
+              <li>Foundry Local</li>
+            </ul>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="folder-icon">📁</span>
-            <div class="project-links">
-              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
-              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
-            </div>
+        <a class="project-row" href="https://github.com/Semihactrk" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
           </div>
-          <h3>Proje Adı</h3>
-          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
-          <ul class="tech-list">
-            <li>Python</li>
-            <li>Flask</li>
-          </ul>
-        </article>
+          <div class="project-row-content">
+            <h3>Proje Adı <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 2-3 satırla anlat.</p>
+            <ul class="tech-pills">
+              <li>Python</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+        </a>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="folder-icon">📁</span>
-            <div class="project-links">
-              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
-              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
-            </div>
+        <a class="project-row" href="https://github.com/Semihactrk" target="_blank" rel="noopener">
+          <div class="project-thumb">
+            <img src="images/proje-3.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
           </div>
-          <h3>Proje Adı</h3>
-          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
-          <ul class="tech-list">
-            <li>JavaScript</li>
-            <li>CSS</li>
-          </ul>
-        </article>
+          <div class="project-row-content">
+            <h3>Proje Adı <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 2-3 satırla anlat.</p>
+            <ul class="tech-pills">
+              <li>JavaScript</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
 
       </div>
     </section>
