@@ -284,13 +284,6 @@ main {
   margin-right: 0.4rem;
 }
 
-.badge-logo {
-  height: 14px;
-  width: auto;
-  vertical-align: -2px;
-  margin-right: 0.35rem;
-}
-
 /* Başarı değil, sadece bağlam bilgisi veren rozetler (bootcamp, staj vb.) */
 .badge-accent {
   color: var(--accent);
