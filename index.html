@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semih Açtürk — Portfolyo</title>
+  <meta name="description" content="Semih Açtürk'ün kişisel portfolyo sitesi." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="logo">SA<span>.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about"><span class="num">01.</span>Hakkımda</a></li>
+        <li><a href="#skills"><span class="num">02.</span>Yetenekler</a></li>
+        <li><a href="#projects"><span class="num">03.</span>Projeler</a></li>
+        <li><a href="#contact"><span class="num">04.</span>İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO — kimsin ===== -->
+    <section id="top" class="hero">
+      <p class="pre-title">Merhaba, ben</p>
+      <!-- TODO: Adını yaz -->
+      <h1>Semih Açtürk.</h1>
+      <!-- TODO: Kısa unvan/slogan -->
+      <h2>Fikirleri koda dönüştürüyorum.</h2>
+      <!-- TODO: 2-3 cümlelik kısa tanıtım -->
+      <p class="hero-desc">
+        Web teknolojileri ve yazılım geliştirme üzerine çalışan bir geliştiriciyim.
+        Şu anda kullanıcı odaklı, hızlı ve erişilebilir ürünler üretmeye odaklanıyorum.
+      </p>
+      <a href="#projects" class="btn">Projelerimi Gör</a>
+    </section>
+
+    <!-- ===== ABOUT — neler yapabilirsin ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span class="num">01.</span> Hakkımda</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <!-- TODO: Kendini tanıt: kim olduğun, deneyimin, motivasyonun -->
+          <p>
+            Yazılım geliştirmeye merakla başladım ve zamanla bunu bir üretim
+            biçimine dönüştürdüm. Temiz kod yazmayı, problemleri basit ve
+            sürdürülebilir çözümlerle ele almayı önemsiyorum.
+          </p>
+          <p>
+            Boş zamanlarımda yeni teknolojiler denemeyi, açık kaynak projelere
+            göz atmayı ve öğrendiklerimi küçük projelerle pekiştirmeyi seviyorum.
+          </p>
+        </div>
+        <!-- TODO: İstersen buraya kendi fotoğrafını koy: <img src="profil.jpg" alt="Semih Açtürk" /> -->
+        <div class="about-photo" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS — neler yapabilirsin ===== -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span class="num">02.</span> Yetenekler</h2>
+      <!-- TODO: Kendi teknoloji/araç listeni yaz -->
+      <ul class="skills-grid">
+        <li>JavaScript / TypeScript</li>
+        <li>HTML5 &amp; CSS3</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git &amp; GitHub</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJECTS — projelerin ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span class="num">03.</span> Projeler</h2>
+      <div class="projects-grid">
+
+        <!-- TODO: Her kart bir proje. Kopyala / çoğalt / düzenle -->
+        <article class="project-card">
+          <div class="project-top">
+            <span class="folder-icon">📁</span>
+            <div class="project-links">
+              <!-- TODO: GitHub repo linkin -->
+              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
+              <!-- TODO: Canlı demo linkin -->
+              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
+            </div>
+          </div>
+          <h3>Proje Adı</h3>
+          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
+          <ul class="tech-list">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="folder-icon">📁</span>
+            <div class="project-links">
+              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
+            </div>
+          </div>
+          <h3>Proje Adı</h3>
+          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Flask</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="folder-icon">📁</span>
+            <div class="project-links">
+              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
+            </div>
+          </div>
+          <h3>Proje Adı</h3>
+          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
+          <ul class="tech-list">
+            <li>JavaScript</li>
+            <li>CSS</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT — nasıl ulaşılır ===== -->
+    <section id="contact" class="section contact">
+      <p class="pre-title">04. Şimdi ne olacak?</p>
+      <h2>İletişime Geçelim</h2>
+      <p class="contact-desc">
+        Yeni fırsatlar, iş birlikleri veya sadece merhaba demek için
+        bana ulaşmaktan çekinme. Mesajını en kısa sürede yanıtlarım.
+      </p>
+      <!-- TODO: Kendi e-postanı yaz -->
+      <a href="mailto:semosctrk33@gmail.com" class="btn">Merhaba De</a>
+
+      <div class="socials">
+        <!-- TODO: Kendi profil linklerini yaz -->
+        <a href="https://github.com/Semihactrk" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/kullanici-adi" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:semosctrk33@gmail.com">E-posta</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tasarım ilhamı: <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a> — kodladı: Semih Açtürk</p>
+  </footer>
+
+</body>
+</html>
