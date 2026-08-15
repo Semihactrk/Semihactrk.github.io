@@ -161,6 +161,28 @@
           </div>
         </button>
 
+        <button class="project-row" type="button" data-project="aerovision" aria-haspopup="dialog">
+          <div class="project-thumb">
+            <img src="images/aerovision-1.png" alt="AeroVision proje görseli" loading="lazy">
+          </div>
+          <div class="project-row-content">
+            <h3>AeroVision — İHA Görüntü İşleme <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <span class="badge badge-accent">TEKNOFEST 2026 — Havacılıkta Yapay Zeka Yarışması</span>
+            <span class="badge">👑 Takım Kaptanı</span>
+            <p>
+              İnsansız hava aracı görüntülerinden gerçek zamanlı nesne tespiti,
+              GPS kesildiğinde görsel odometri ile konum kestirimi yapan
+              yarışma projesi.
+            </p>
+            <ul class="tech-pills">
+              <li>YOLOv26m</li>
+              <li>Visual Odometry</li>
+              <li>SIFT</li>
+              <li>SAHI</li>
+            </ul>
+          </div>
+        </button>
+
         <button class="project-row" type="button" data-project="proje-2" aria-haspopup="dialog">
           <div class="project-thumb">
             <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
@@ -285,6 +307,33 @@
         <div class="modal-links">
           <a href="https://github.com/Semihactrk/YZTA-Hackathon-2026" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
         </div>
+      </template>
+
+      <template id="detail-aerovision">
+        <h3>AeroVision — İHA Görüntü İşleme</h3>
+        <span class="badge badge-accent">TEKNOFEST 2026 — Havacılıkta Yapay Zeka Yarışması</span>
+        <span class="badge">👑 Takım Kaptanı</span>
+        <p>
+          Yazılım Mühendisliği ve Bilgisayar Mühendisliği öğrencilerinden
+          oluşan AeroVision takımının kaptanlığını üstlendim. Takım,
+          insansız hava araçları (İHA) için bu yarışma projesini geliştirdi.
+          RGB ve termal görüntüler; deniz,
+          orman, karlı bölgeler gibi farklı coğrafi koşulları ve gündüz,
+          güneşli, akşam gibi farklı ışık koşullarını kapsayan çeşitlendirilmiş
+          bir veri seti üzerinde çalışıyor.
+        </p>
+        <p>
+          Nesne tespiti için hız/doğruluk dengesi nedeniyle YOLOv26m mimarisi
+          tercih edildi; küçük ve kısmen görünen nesneler için çok ölçekli
+          feature fusion ve SAHI (Slicing Aided Hyper Inference) kullanıldı.
+          GPS verisinin kesilebileceği durumlarda FAST özellik çıkarımı ve
+          Lucas-Kanade optik akış ile görsel odometri tabanlı konum kestirimi
+          yapılıyor. Daha önce tanımlanmamış nesneleri bulmak için SIFT tabanlı
+          eşleştirme, zorlu hava koşullarında (sis, yağmur, düşük ışık) ise
+          görüntü ön işleme teknikleri uygulanıyor. Eğitimde SCIoU kayıp
+          fonksiyonu ve Lion optimizasyon algoritması kullanıldı.
+        </p>
+        <p class="tech">YOLOv26m · SAHI · Visual Odometry (Lucas-Kanade) · SIFT · CLAHE · Python</p>
       </template>
 
       <template id="detail-proje-2">
