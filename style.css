@@ -210,6 +210,15 @@ main {
 }
 
 .project-row {
+  /* buton varsayılanlarını sıfırla */
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -281,6 +290,84 @@ main {
 @media (max-width: 560px) {
   .project-thumb { width: 90px; }
   .project-row { gap: 1rem; }
+}
+
+/* ===== Proje detay penceresi (modal) ===== */
+.project-modal {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 560px;
+  width: calc(100% - 2rem);
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  background: var(--navy-light);
+  color: var(--slate);
+}
+
+.project-modal::backdrop {
+  background: rgba(10, 25, 47, 0.75);
+  backdrop-filter: blur(2px);
+}
+
+.project-modal h3 {
+  color: var(--lightest);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.project-modal .modal-body p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  color: var(--slate);
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.4rem;
+}
+
+.modal-close:hover { color: var(--accent); }
+
+/* Modal içindeki tech satırı ve öne çıkan zorluk kutusu */
+.tech {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate-light);
+}
+
+.highlight {
+  font-size: 0.92em;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 4px;
+}
+
+.modal-links {
+  margin-top: 1.5rem;
+}
+
+.modal-links a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+}
+
+.modal-links a:hover {
+  background: rgba(100, 255, 218, 0.1);
 }
 
 /* ===== Contact ===== */

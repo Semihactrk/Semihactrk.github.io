@@ -79,8 +79,8 @@
       <div class="project-list">
 
         <!-- TODO: Her satır bir proje. Kopyala / çoğalt / düzenle.
-             Kısa tut: 2-3 satırlık açıklama yeter, detay zaten linkteki repo/demo'da. -->
-        <a class="project-row" href="https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local" target="_blank" rel="noopener">
+             data-project değeri, alttaki <template id="detail-...">'in id'siyle eşleşmeli. -->
+        <button class="project-row" type="button" data-project="local-rag" aria-haspopup="dialog">
           <div class="project-thumb">
             <img src="images/local-rag-1.png" alt="Local RAG Assistant ekran görüntüsü" loading="lazy">
           </div>
@@ -98,9 +98,9 @@
               <li>Foundry Local</li>
             </ul>
           </div>
-        </a>
+        </button>
 
-        <a class="project-row" href="https://github.com/Semihactrk" target="_blank" rel="noopener">
+        <button class="project-row" type="button" data-project="proje-2" aria-haspopup="dialog">
           <div class="project-thumb">
             <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
           </div>
@@ -112,9 +112,9 @@
               <li>Flask</li>
             </ul>
           </div>
-        </a>
+        </button>
 
-        <a class="project-row" href="https://github.com/Semihactrk" target="_blank" rel="noopener">
+        <button class="project-row" type="button" data-project="proje-3" aria-haspopup="dialog">
           <div class="project-thumb">
             <img src="images/proje-3.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
           </div>
@@ -126,9 +126,57 @@
               <li>CSS</li>
             </ul>
           </div>
-        </a>
+        </button>
 
       </div>
+
+      <!-- ===== Proje detay şablonları — kartlarda görünmeyen uzun metinler burada =====
+           TODO: Her template'in id'si yukarıdaki data-project ile eşleşmeli. -->
+      <template id="detail-local-rag">
+        <h3>Local RAG Assistant — Foundry Local</h3>
+        <p>
+          Microsoft Foundry Local ile tamamen offline çalışan, doküman tabanlı
+          soru-cevap asistanı. Yüklenen dokümanları embed edip SQLite üzerinde
+          en alakalı metin parçalarını buluyor, ardından yerel bir dil modeliyle
+          kaynak göstererek cevaplıyor. Microsoft AI Innovators Summer
+          Internship programı kapsamında geliştirildi.
+        </p>
+        <p class="tech">Python · Flask · SQLite · Foundry Local (Qwen2.5 &amp; Qwen3-Embedding)</p>
+        <p class="highlight">
+          <strong>Öne Çıkan Zorluk:</strong> Model bazı sorularda aynı cümleyi
+          80+ kez tekrarlayıp yanıt süresini 104 saniyeye çıkarıyordu;
+          frequency_penalty ayarıyla bunu 10 saniyeye indirdim. Ayrıca retrieval
+          benzerlik skorlarını kalibre ederek "cevap bulunamadı" durumlarını
+          güvenilir şekilde ayırt eden bir eşik değeri (threshold) belirledim.
+        </p>
+        <div class="modal-links">
+          <a href="https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
+        </div>
+      </template>
+
+      <template id="detail-proje-2">
+        <h3>Proje Adı</h3>
+        <p>Buraya projenin tam açıklamasını, karşılaştığın zorlukları ve nasıl çözdüğünü istediğin kadar uzun yazabilirsin — kartta görünmez, sadece tıklayınca burada çıkar.</p>
+        <p class="tech">Python · Flask</p>
+        <div class="modal-links">
+          <a href="https://github.com/Semihactrk" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
+        </div>
+      </template>
+
+      <template id="detail-proje-3">
+        <h3>Proje Adı</h3>
+        <p>Buraya projenin tam açıklamasını, karşılaştığın zorlukları ve nasıl çözdüğünü istediğin kadar uzun yazabilirsin — kartta görünmez, sadece tıklayınca burada çıkar.</p>
+        <p class="tech">JavaScript · CSS</p>
+        <div class="modal-links">
+          <a href="https://github.com/Semihactrk" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
+        </div>
+      </template>
+
+      <!-- ===== Proje detay penceresi (modal) ===== -->
+      <dialog id="project-modal" class="project-modal">
+        <button type="button" class="modal-close" aria-label="Kapat">✕</button>
+        <div class="modal-body"></div>
+      </dialog>
     </section>
 
     <!-- ===== CONTACT — nasıl ulaşılır ===== -->
@@ -155,5 +203,6 @@
     <p>Tasarım ilhamı: <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a> — kodladı: Semiha Çıtırkı</p>
   </footer>
 
+  <script src="script.js" defer></script>
 </body>
 </html>
