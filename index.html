@@ -140,6 +140,26 @@
           </div>
         </button>
 
+        <button class="project-row" type="button" data-project="toprak-ana" aria-haspopup="dialog">
+          <div class="project-thumb">
+            <img src="images/toprak-ana-1.png" alt="Toprak Ana ekran görüntüsü" loading="lazy">
+          </div>
+          <div class="project-row-content">
+            <h3>Toprak Ana — AI Destekli Kooperatif Pazaryeri <span class="ext-icon" aria-hidden="true">↗</span></h3>
+            <span class="badge badge-accent">Yapay Zeka ve Teknoloji Akademisi — Hackathon Projesi</span>
+            <p>
+              Hatay'daki kadın üreticilerin el işi ve yerel ürünlerini
+              satabildiği, çok ajanlı yapay zeka destekli bir e-ticaret platformu.
+            </p>
+            <ul class="tech-pills">
+              <li>FastAPI</li>
+              <li>React</li>
+              <li>Gemini API</li>
+              <li>RAG</li>
+            </ul>
+          </div>
+        </button>
+
         <button class="project-row" type="button" data-project="proje-2" aria-haspopup="dialog">
           <div class="project-thumb">
             <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
@@ -241,6 +261,30 @@
         </div>
       </template>
 
+      <template id="detail-toprak-ana">
+        <h3>Toprak Ana — AI Destekli Kooperatif Pazaryeri</h3>
+        <span class="badge badge-accent">Yapay Zeka ve Teknoloji Akademisi — Hackathon Projesi</span>
+        <p>
+          Hatay'daki kadın üreticilerin el işi ve yerel ürünlerini dijital
+          ortamda satmasını sağlayan, tam entegre bir e-ticaret platformu.
+          Deprem sonrası ekonomik zorluklar yaşayan kooperatiflerin
+          tüketicilere ulaşmasını amaçlıyor.
+        </p>
+        <p>
+          Google Gemini tabanlı üç ajanlı (Orchestrator, Satış, Operasyon)
+          bir yapay zeka sistemi kullanıcı mesajlarını analiz edip
+          yönlendiriyor; kooperatif hikayeleri vektörel RAG ile semantik
+          aramayla sunuluyor. Kritik stok, lojistik risk ve gecikmiş
+          siparişler Telegram üzerinden otomatik bildiriliyor. Ayrıca
+          dashboard, ürün/sipariş yönetimi ve rol tabanlı erişimin
+          olduğu bir admin paneli içeriyor.
+        </p>
+        <p class="tech">FastAPI · SQLAlchemy · SQLite · Google Gemini API · React · TypeScript · Vite · scikit-learn</p>
+        <div class="modal-links">
+          <a href="https://github.com/Semihactrk/YZTA-Hackathon-2026" target="_blank" rel="noopener">GitHub'da İncele ↗</a>
+        </div>
+      </template>
+
       <template id="detail-proje-2">
         <h3>Proje Adı</h3>
         <p>Buraya projenin tam açıklamasını, karşılaştığın zorlukları ve nasıl çözdüğünü istediğin kadar uzun yazabilirsin — kartta görünmez, sadece tıklayınca burada çıkar.</p>
@@ -287,7 +331,7 @@
   </main>
 
   <footer class="footer">
-    <p>Tasarım ilhamı: <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a> — kodladı: Semiha Çıtırkı</p>
+    <p>Tasarımda Brittany Chiang'dan ilham aldım, kodun tamamını Visual Studio Code'da yazdım. HTML, CSS ve JavaScript ile geliştirildi, GitHub Pages üzerinden yayınlanıyor.</p>
   </footer>
 
   <script src="script.js" defer></script>
