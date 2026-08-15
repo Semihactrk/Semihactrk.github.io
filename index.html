@@ -57,7 +57,7 @@
           </p>
         </div>
         <div class="about-photo">
-          <img src="images/profil.jpg" alt="Semiha Çıtırkı" loading="lazy" />
+          <img src="images/profil.jpg" alt="Semiha Çıtırkı" loading="lazy" class="zoomable" />
         </div>
       </div>
     </section>
@@ -87,7 +87,7 @@
              data-project değeri, alttaki <template id="detail-...">'in id'siyle eşleşmeli. -->
         <button class="project-row" type="button" data-project="local-rag" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/local-rag-1.png" alt="Local RAG Assistant ekran görüntüsü" loading="lazy">
+            <img src="images/local-rag-1.png" alt="Local RAG Assistant ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Local RAG Assistant — Foundry Local <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -108,7 +108,7 @@
 
         <button class="project-row" type="button" data-project="yolcu" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/Yolcu.jpg" alt="Yolcu — Kariyer Ekosistem Uygulaması ekran görüntüsü" loading="lazy">
+            <img src="images/Yolcu.jpg" alt="Yolcu — Kariyer Ekosistem Uygulaması ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Yolcu — Kariyer Ekosistem Uygulaması <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -128,7 +128,7 @@
 
         <button class="project-row" type="button" data-project="fikirlab" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/fikirlab-1.png" alt="FikirLab ekran görüntüsü" loading="lazy">
+            <img src="images/fikirlab-1.png" alt="FikirLab ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>FikirLab — AI Destekli Fikir Doğrulama <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -148,7 +148,7 @@
 
         <button class="project-row" type="button" data-project="toprak-ana" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/toprak-ana-1.png" alt="Toprak Ana ekran görüntüsü" loading="lazy">
+            <img src="images/toprak-ana-1.png" alt="Toprak Ana ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Toprak Ana — AI Destekli Kooperatif Pazaryeri <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -168,7 +168,7 @@
 
         <button class="project-row" type="button" data-project="aerovision" aria-haspopup="dialog">
           <div class="project-thumb thumb-contain">
-            <img src="images/teknofest-logo.png" alt="AeroVision proje görseli" loading="lazy">
+            <img src="images/teknofest-logo.png" alt="AeroVision proje görseli" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>AeroVision — TEKNOFEST - Havacılıkta Yapay Zeka <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -190,7 +190,7 @@
 
         <button class="project-row" type="button" data-project="algomind" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/algomind-1.png" alt="Algomind ekran görüntüsü" loading="lazy">
+            <img src="images/algomind-1.png" alt="Algomind ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Algomind — Otizmli Çocuklar İçin Eğitim Uygulaması <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -211,7 +211,7 @@
 
         <button class="project-row" type="button" data-project="proje-2" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
+            <img src="images/proje-2.png" alt="Proje Adı ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Proje Adı <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -225,7 +225,7 @@
 
         <button class="project-row" type="button" data-project="proje-3" aria-haspopup="dialog">
           <div class="project-thumb">
-            <img src="images/proje-3.png" alt="Proje Adı ekran görüntüsü" loading="lazy">
+            <img src="images/proje-3.png" alt="Proje Adı ekran görüntüsü" loading="lazy" class="zoomable">
           </div>
           <div class="project-row-content">
             <h3>Proje Adı <span class="ext-icon" aria-hidden="true">↗</span></h3>
@@ -431,6 +431,12 @@
   <footer class="footer">
     <p>Tasarımda Brittany Chiang'dan ilham aldım, kodun tamamını Visual Studio Code'da yazdım. HTML, CSS ve JavaScript ile geliştirildi, GitHub Pages üzerinden yayınlanıyor.</p>
   </footer>
+
+  <!-- ===== Fotoğraf büyütme penceresi (lightbox) — .zoomable görsellere tıklayınca açılır ===== -->
+  <dialog id="photo-lightbox" class="photo-lightbox">
+    <button type="button" class="modal-close" aria-label="Kapat">✕</button>
+    <img class="lightbox-img" alt="" />
+  </dialog>
 
   <script src="script.js" defer></script>
 </body>

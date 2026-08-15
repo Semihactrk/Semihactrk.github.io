@@ -331,6 +331,11 @@ main {
 
 /* ===== Proje detay penceresi (modal) ===== */
 .project-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   border: none;
   border-radius: 8px;
   padding: 2rem;
@@ -408,6 +413,50 @@ main {
 
 .modal-links a:hover {
   background: rgba(100, 255, 218, 0.1);
+}
+
+/* ===== Fotoğraf büyütme (lightbox) ===== */
+.zoomable {
+  cursor: zoom-in;
+}
+
+.photo-lightbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  background: transparent;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.photo-lightbox::backdrop {
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(2px);
+}
+
+.photo-lightbox .lightbox-img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  cursor: zoom-out;
+}
+
+.photo-lightbox .modal-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--lightest);
+  font-size: 1.4rem;
+  background: rgba(10, 25, 47, 0.6);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 /* ===== Contact ===== */
