@@ -283,6 +283,13 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Başarı değil, sadece bağlam bilgisi veren rozetler (bootcamp, staj vb.) */
+.badge-accent {
+  color: var(--accent);
+  background: rgba(100, 255, 218, 0.08);
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
 .tech-pills {
   display: flex;
   flex-wrap: wrap;
@@ -366,6 +373,9 @@ main {
 
 .modal-links {
   margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .modal-links a {
