@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semih Açtürk — Portfolyo</title>
-  <meta name="description" content="Semih Açtürk'ün kişisel portfolyo sitesi." />
+  <title>Semiha Çıtırkı — Portfolyo</title>
+  <meta name="description" content="Semiha Çıtırkı'nın kişisel portfolyo sitesi." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ===== NAV ===== -->
   <header class="nav">
-    <a href="#top" class="logo">SA<span>.</span></a>
+    <a href="#top" class="logo">SÇ<span>.</span></a>
     <nav>
       <ul class="nav-links">
         <li><a href="#about"><span class="num">01.</span>Hakkımda</a></li>
@@ -27,7 +27,7 @@
     <section id="top" class="hero">
       <p class="pre-title">Merhaba, ben</p>
       <!-- TODO: Adını yaz -->
-      <h1>Semih Açtürk.</h1>
+      <h1>Semiha Çıtırkı.</h1>
       <!-- TODO: Kısa unvan/slogan -->
       <h2>Fikirleri koda dönüştürüyorum.</h2>
       <!-- TODO: 2-3 cümlelik kısa tanıtım -->
@@ -54,7 +54,7 @@
             göz atmayı ve öğrendiklerimi küçük projelerle pekiştirmeyi seviyorum.
           </p>
         </div>
-        <!-- TODO: İstersen buraya kendi fotoğrafını koy: <img src="profil.jpg" alt="Semih Açtürk" /> -->
+        <!-- TODO: İstersen buraya kendi fotoğrafını koy: <img src="profil.jpg" alt="Semiha Çıtırkı" /> -->
         <div class="about-photo" aria-hidden="true"></div>
       </div>
     </section>
@@ -80,22 +80,41 @@
 
         <!-- TODO: Her kart bir proje. Kopyala / çoğalt / düzenle -->
         <article class="project-card">
-          <div class="project-top">
-            <span class="folder-icon">📁</span>
-            <div class="project-links">
-              <!-- TODO: GitHub repo linkin -->
-              <a href="https://github.com/Semihactrk" target="_blank" rel="noopener" aria-label="GitHub reposu">GitHub</a>
-              <!-- TODO: Canlı demo linkin -->
-              <a href="#" target="_blank" rel="noopener" aria-label="Canlı demo">Demo</a>
-            </div>
+          <div class="project-screenshots">
+            <a href="images/local-rag-1.png" target="_blank">
+              <img src="images/local-rag-1.png" alt="Sohbet arayüzü ve kaynak referansları">
+            </a>
+            <a href="images/local-rag-2.png" target="_blank">
+              <img src="images/local-rag-2.png" alt="Kaynak arşivi paneli">
+            </a>
+            <a href="images/local-rag-3.png" target="_blank">
+              <img src="images/local-rag-3.png" alt="Konuşma geçmişi">
+            </a>
           </div>
-          <h3>Proje Adı</h3>
-          <p>Projenin ne işe yaradığını, hangi problemi çözdüğünü 1-2 cümleyle anlat.</p>
-          <ul class="tech-list">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-          </ul>
+
+          <h3>Local RAG Assistant — Foundry Local</h3>
+          <p>
+            Microsoft Foundry Local ile tamamen offline çalışan, doküman tabanlı
+            soru-cevap asistanı. Yüklenen dokümanları embed edip SQLite üzerinde
+            en alakalı metin parçalarını buluyor, ardından yerel bir dil modeliyle
+            kaynak göstererek cevaplıyor. Microsoft AI Innovators Summer
+            Internship programı kapsamında geliştirildi.
+          </p>
+          <p class="tech">Python · Flask · SQLite · Foundry Local (Qwen2.5 &amp; Qwen3-Embedding)</p>
+
+          <p class="highlight">
+            <strong>Öne Çıkan Zorluk:</strong> Model bazı sorularda aynı cümleyi
+            80+ kez tekrarlayıp yanıt süresini 104 saniyeye çıkarıyordu;
+            frequency_penalty ayarıyla bunu 10 saniyeye indirdim. Ayrıca retrieval
+            benzerlik skorlarını kalibre ederek "cevap bulunamadı" durumlarını
+            güvenilir şekilde ayırt eden bir eşik değeri (threshold) belirledim.
+          </p>
+
+          <div class="project-links">
+            <a href="https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local" target="_blank" rel="noopener">
+              GitHub'da İncele
+            </a>
+          </div>
         </article>
 
         <article class="project-card">
@@ -154,7 +173,7 @@
   </main>
 
   <footer class="footer">
-    <p>Tasarım ilhamı: <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a> — kodladı: Semih Açtürk</p>
+    <p>Tasarım ilhamı: <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a> — kodladı: Semiha Çıtırkı</p>
   </footer>
 
 </body>
