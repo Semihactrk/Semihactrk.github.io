@@ -13,7 +13,7 @@ const translations = {
 
     heroPretitle: `Merhaba, ben`,
     heroSlogan: `Fikirleri koda dönüştürüyorum.`,
-    heroDesc: `Web teknolojileri ve yazılım geliştirme üzerine çalışan bir geliştiriciyim. Şu anda kullanıcı odaklı, hızlı ve erişilebilir ürünler üretmeye odaklanıyorum.`,
+    heroDesc: `Yapay zeka ve modern yazılım mimarilerine odaklanan bir yazılım mühendisi adayıyım.`,
     heroBtn: `Projelerimi Gör`,
 
     aboutTitle: `Hakkımda`,
@@ -50,7 +50,7 @@ const translations = {
 
     heroPretitle: `Hi, I'm`,
     heroSlogan: `I turn ideas into code.`,
-    heroDesc: `I'm a developer working on web technologies and software development. I'm currently focused on building user-centric, fast, and accessible products.`,
+    heroDesc: `I'm a software engineering graduate candidate focused on AI and modern software architectures.`,
     heroBtn: `View My Projects`,
 
     aboutTitle: `About`,
@@ -84,7 +84,7 @@ const translations = {
 const projects = [
   {
     id: `local-rag`,
-    image: `images/local-rag-1.png`,
+    image: `images/Microsoft4.jpg`,
     github: `https://github.com/Semihactrk/-Local-RAG-AI-Assistant-with-Microsoft-Foundry-Local`,
     demo: null,
     tech: [`Python`, `Flask`, `SQLite`, `Foundry Local`],
