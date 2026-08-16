@@ -144,7 +144,7 @@ const projects = [
 
   {
     id: `fikirlab`,
-    image: `images/fikirlab-1.png`,
+    image: `images/Fikirlab.jpg`,
     github: `https://github.com/Semihactrk/YZTA---Team-138`,
     demo: `https://fikirlab-frontend.onrender.com`,
     tech: [`Django REST`, `React`, `PostgreSQL`, `Gemini API`],
@@ -230,36 +230,6 @@ const projects = [
       modalParagraphs: [
         `I served as captain of Team AeroVision, made up of Software Engineering and Computer Engineering students. The team built this competition project for autonomous vehicles. It works on a diverse dataset of RGB and thermal imagery covering different geographic conditions — sea, forest, snowy terrain — and different lighting conditions such as daytime, sunny, and evening.`,
         `YOLOv26m was chosen for object detection due to its speed/accuracy balance; multi-scale feature fusion and SAHI (Slicing Aided Hyper Inference) were used for small and partially visible objects. When GPS signal may be lost, position is estimated via visual odometry using FAST feature extraction and Lucas-Kanade optical flow. SIFT-based matching finds previously undefined objects, while image preprocessing techniques handle harsh weather conditions (fog, rain, low light). Training used the SCIoU loss function and the Lion optimization algorithm.`,
-      ],
-    },
-  },
-
-  {
-    id: `algomind`,
-    image: `images/algomind-1.png`,
-    github: `https://github.com/Semihactrk/Algomind_BTK-_HACKATHON-_2025`,
-    demo: null,
-    tech: [`Kivy`, `FastAPI`, `PostgreSQL`, `Gemini API`],
-    modalTech: `Python · Kivy · KivyMD · FastAPI · SQLAlchemy · PostgreSQL (Google Cloud SQL) · Gemini API`,
-    badges: [
-      { cls: `badge-accent`, tr: `BTK Hackathon 2025`, en: `BTK Hackathon 2025` },
-    ],
-    tr: {
-      title: `Algomind — Otizmli Çocuklar İçin Eğitim Uygulaması`,
-      alt: `Algomind ekran görüntüsü`,
-      shortDesc: `Otizmli çocuklar için tasarlanmış, yapay zeka destekli etkileşimli bir mobil öğrenme platformu. Kişiselleştirilmiş testler ve seslendirilmiş masallar sunuyor.`,
-      modalParagraphs: [
-        `Otizmli çocuklar için tasarlanmış, etkileşimli bir mobil öğrenme platformu. Gemini API ile otomatik test oluşturma ve kişiselleştirilmiş performans raporları sunuyor; Google Cloud TTS ile masallar sesli olarak dinlenebiliyor ve anlık değiştirilebiliyor.`,
-        `Öğretmen ve veliler için ayrı roller var: öğrenci yönetimi, test çözümü ve rapor görüntüleme yetkileri buna göre ayrışıyor. Mimari; mobil uygulamadan FastAPI backend'ine, oradan Gemini API ve Google TTS'e, sonucun PostgreSQL veritabanına yazılmasına kadar uzanıyor.`,
-      ],
-    },
-    en: {
-      title: `Algomind — Learning App for Children with Autism`,
-      alt: `Algomind screenshot`,
-      shortDesc: `An AI-powered interactive mobile learning platform designed for children with autism, offering personalized tests and narrated stories.`,
-      modalParagraphs: [
-        `An interactive mobile learning platform designed for children with autism. It offers automatic test generation and personalized performance reports via the Gemini API; stories can be listened to and swapped instantly using Google Cloud TTS.`,
-        `Teachers and parents have separate roles, with student management, test-taking, and report-viewing permissions split accordingly. The architecture flows from the mobile app to a FastAPI backend, then to the Gemini API and Google TTS, with results written to a PostgreSQL database.`,
       ],
     },
   },
