@@ -21,7 +21,9 @@ const translations = {
     aboutP2: `Makine öğrenmesi, bilgisayarla görü ve doğal dil işleme gibi güncel teknolojileri yakından takip ediyor; bu yaklaşımları uçtan uca çalışan, sağlam yazılım ürünlerine entegre etmeye odaklanıyorum. Takım çalışmasına yatkınlığım ve analitik düşünme yapımla, dinamik teknoloji ekiplerinde değer yaratmayı amaçlıyorum.`,
 
     skillsTitle: `Yetenekler`,
-    skillCV: `Bilgisayarlı Görü (YOLO)`,
+    skillCV: `Bilgisayarlı Görü (YOLO, OpenCV)`,
+    skillMultiAgent: `Çoklu Ajan (Multi-Agent) Sistemleri`,
+    skillEnglish: `İngilizce (B1)`,
 
     projectsTitle: `Projeler`,
     githubLinkLabel: `GitHub'da İncele`,
@@ -58,7 +60,9 @@ const translations = {
     aboutP2: `I closely follow current technologies such as machine learning, computer vision, and natural language processing, and focus on integrating these approaches into robust, end-to-end software products. With my aptitude for teamwork and analytical thinking, I aim to create value within dynamic technology teams.`,
 
     skillsTitle: `Skills`,
-    skillCV: `Computer Vision (YOLO)`,
+    skillCV: `Computer Vision (YOLO, OpenCV)`,
+    skillMultiAgent: `Multi-Agent Systems`,
+    skillEnglish: `English (B1)`,
 
     projectsTitle: `Projects`,
     githubLinkLabel: `View on GitHub`,
