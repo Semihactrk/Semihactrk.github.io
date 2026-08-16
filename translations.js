@@ -174,7 +174,7 @@ const projects = [
 
   {
     id: `toprak-ana`,
-    image: `images/toprak-ana-1.png`,
+    image: `images/ToprakAna.jpg`,
     github: `https://github.com/Semihactrk/YZTA-Hackathon-2026`,
     demo: null,
     tech: [`FastAPI`, `React`, `Gemini API`, `RAG`],
