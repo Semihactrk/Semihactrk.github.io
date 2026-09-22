@@ -23,6 +23,7 @@ const translations = {
     skillsTitle: `Yetenekler`,
     skillCV: `Bilgisayarlı Görü (YOLO, OpenCV)`,
     skillMultiAgent: `Çoklu Ajan (Multi-Agent) Sistemleri`,
+    skillGenAI: `Üretken Yapay Zeka (Ollama, ComfyUI, ElevenLabs)`,
     skillEnglish: `İngilizce (B1)`,
 
     projectsTitle: `Projeler`,
@@ -62,6 +63,7 @@ const translations = {
     skillsTitle: `Skills`,
     skillCV: `Computer Vision (YOLO, OpenCV)`,
     skillMultiAgent: `Multi-Agent Systems`,
+    skillGenAI: `Generative AI (Ollama, ComfyUI, ElevenLabs)`,
     skillEnglish: `English (B1)`,
 
     projectsTitle: `Projects`,
@@ -234,6 +236,32 @@ const projects = [
       modalParagraphs: [
         `I served as captain of Team AeroVision, made up of Software Engineering and Computer Engineering students. The team built this competition project for autonomous vehicles. It works on a diverse dataset of RGB and thermal imagery covering different geographic conditions — sea, forest, snowy terrain — and different lighting conditions such as daytime, sunny, and evening.`,
         `YOLOv26m was chosen for object detection due to its speed/accuracy balance; multi-scale feature fusion and SAHI (Slicing Aided Hyper Inference) were used for small and partially visible objects. When GPS signal may be lost, position is estimated via visual odometry using FAST feature extraction and Lucas-Kanade optical flow. SIFT-based matching finds previously undefined objects, while image preprocessing techniques handle harsh weather conditions (fog, rain, low light). Training used the SCIoU loss function and the Lion optimization algorithm.`,
+      ],
+    },
+  },
+
+  {
+    id: `icerik-otomasyonu`,
+    image: `images/IcerikStudyosu.jpg`,
+    github: null,
+    demo: null,
+    tech: [`Ollama`, `ComfyUI`, `FLUX / Wan`, `ElevenLabs`],
+    modalTech: `Ollama · ComfyUI (FLUX / Wan) · ElevenLabs · Web Tabanlı Kontrol Paneli`,
+    badges: [],
+    tr: {
+      title: `Yapay Zeka Destekli İçerik Üretim Otomasyonu`,
+      alt: `Yapay Zeka Destekli İçerik Üretim Otomasyonu kontrol paneli ekran görüntüsü`,
+      shortDesc: `Uçtan uca yapay zeka içerik otomasyon sistemi: bir fikri, Ollama ile zenginleştirilmiş senaryoya, ardından ComfyUI (FLUX/Wan) ile görsel/video üretimine ve ElevenLabs ile Türkçe seslendirmeye dönüştürüyor. Web tabanlı kontrol paneli üzerinden yönetiliyor.`,
+      modalParagraphs: [
+        `Uçtan uca yapay zeka içerik otomasyon sistemi: bir fikri, Ollama ile zenginleştirilmiş senaryoya, ardından ComfyUI (FLUX/Wan) ile görsel/video üretimine ve ElevenLabs ile Türkçe seslendirmeye dönüştürüyor. Web tabanlı kontrol paneli üzerinden yönetiliyor.`,
+      ],
+    },
+    en: {
+      title: `AI-Powered Content Production Automation`,
+      alt: `AI-Powered Content Production Automation control panel screenshot`,
+      shortDesc: `An end-to-end AI content automation system: it turns an idea into an Ollama-enriched script, then into images/video with ComfyUI (FLUX/Wan) and Turkish voice-over with ElevenLabs. Managed through a web-based control panel.`,
+      modalParagraphs: [
+        `An end-to-end AI content automation system: it turns an idea into an Ollama-enriched script, then into images/video with ComfyUI (FLUX/Wan) and Turkish voice-over with ElevenLabs. Managed through a web-based control panel.`,
       ],
     },
   },
