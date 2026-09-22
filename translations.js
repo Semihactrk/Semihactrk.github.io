@@ -242,7 +242,7 @@ const projects = [
 
   {
     id: `icerik-otomasyonu`,
-    image: `images/IcerikStudyosu.jpg`,
+    image: `images/IcerikStudyosu.png`,
     github: null,
     demo: null,
     tech: [`Ollama`, `ComfyUI`, `FLUX / Wan`, `ElevenLabs`],
